@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<style>img{max-width:100%}[hidden]{display:none!important}.mihon-nav a{color:inherit}.mihon-nav b{font-weight:700}</style>
+<title>秋岸寛久 作品目録</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@500;600;800&family=Noto+Sans+JP:wght@400;500;700&display=swap">
+<style>
+:root{
+  --paper:#EAECE6; --sheet:#F3F4EF; --rule:#D3D8CF;
+  --ink:#1B2129; --ink2:#4B5560; --ink3:#7A848E;
+  --ai:#234A73; --on-ai:#F3F4EF; --shu:#A8332A;
+  --serif:"Shippori Mincho B1","Hiragino Mincho ProN","Yu Mincho",serif;
+  --sans:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --paper:#14181D; --sheet:#1B2027; --rule:#2C333B;
+    --ink:#E6E8E3; --ink2:#B4BBC2; --ink3:#89929B;
+    --ai:#8FB3DB; --on-ai:#14181D; --shu:#E0796F;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --paper:#14181D; --sheet:#1B2027; --rule:#2C333B;
+  --ink:#E6E8E3; --ink2:#B4BBC2; --ink3:#89929B;
+  --ai:#8FB3DB; --on-ai:#14181D; --shu:#E0796F;
+}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.9;margin:0;padding-inline:24px;word-break:auto-phrase}
+a{color:var(--ai);text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--ai);outline-offset:3px}
+.wrap{max-width:1180px;margin-inline:auto}
+h1,h2,h3{font-family:var(--serif);font-weight:600;text-wrap:balance;margin:0}
+.num{font-variant-numeric:tabular-nums}
+.demo{font-size:13px;color:var(--ink3);text-align:center;padding-block:8px;border-bottom:1px solid var(--rule);margin-inline:-24px;padding-inline:24px}
+
+/* ヘッダー */
+.head{display:flex;justify-content:space-between;align-items:flex-end;gap:16px 32px;flex-wrap:wrap;padding-block:36px 22px;border-bottom:2px solid var(--ink)}
+.name{font-family:var(--serif);font-weight:800;font-size:clamp(30px,4vw,40px);letter-spacing:.16em;line-height:1.2;margin:0}
+.name small{display:block;font-family:var(--sans);font-weight:400;font-size:15px;letter-spacing:.08em;color:var(--ink2);margin-top:8px}
+.head nav ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:4px 28px;font-size:16px}
+.head nav a{color:var(--ink);text-decoration:none;display:inline-block;padding-block:8px}
+.head nav a:hover{color:var(--ai);text-decoration:underline}
+
+/* 総譜の段（この案の署名） */
+.score{display:grid;gap:5px;padding:6px 0 6px 12px;border-left:3px solid var(--ink);position:relative}
+.score::before,.score::after{content:"";position:absolute;left:-3px;width:9px;height:3px;background:var(--ink)}
+.score::before{top:0} .score::after{bottom:0}
+.stave{display:grid;grid-template-columns:6.2em 1fr 2.6em;align-items:center;gap:10px;min-height:22px}
+.stn{font-family:var(--serif);font-weight:600;font-size:14.5px;line-height:1.25;color:var(--ink2);text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.stn i{font-style:normal;font-family:var(--sans);font-size:11px;color:var(--ink3);display:block}
+.lines{height:13px;border-right:1.5px solid var(--ink3);background:repeating-linear-gradient(to bottom,var(--ink3) 0 1px,transparent 1px 3px) left center/100% 13px no-repeat}
+.stave.solo .lines{background-image:repeating-linear-gradient(to bottom,var(--ink) 0 1px,transparent 1px 3px);border-right-color:var(--ink)}
+.stave.solo .stn{color:var(--ink)}
+.cnt{font-size:14px;color:var(--ink2);font-variant-numeric:tabular-nums}
+.stave.group{grid-template-columns:1fr}
+.stave.group .glabel{font-size:14.5px;color:var(--ink3);line-height:1.6}
+.score.bare{border-left:0;padding-left:0}
+.score.bare::before,.score.bare::after{display:none}
+
+/* 最近の仕事 */
+.recent{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(28px,5vw,72px);padding-block:44px 64px;align-items:start}
+.label{font-size:14px;font-weight:700;letter-spacing:.14em;margin:0 0 14px;color:var(--ink2)}
+.recent .date{font-size:15px;color:var(--ink2);margin:0 0 6px}
+.recent h1{font-size:clamp(30px,4.2vw,48px);font-weight:800;line-height:1.3;letter-spacing:.02em}
+.recent .role{font-family:var(--serif);font-size:clamp(20px,2.4vw,26px);font-weight:600;margin:6px 0 22px}
+.recent .role span{color:var(--ink3);font-size:.7em;margin-right:.6em}
+.credits{display:grid;grid-template-columns:auto 1fr;gap:4px 20px;margin:0 0 20px;font-size:16px;border-block:1px solid var(--rule);padding-block:12px}
+.credits dt{color:var(--ink3)} .credits dd{margin:0}
+.recent p.body{margin:0 0 24px;max-width:34em}
+.recent .sub{font-size:15px;color:var(--ink2);margin:18px 0 0}
+.recent .score{max-width:460px}
+.links{display:flex;flex-wrap:wrap;gap:12px 28px;margin-top:22px;font-size:16px}
+.photo{margin:0}
+.photo .frame{aspect-ratio:4/5;max-width:100%;display:grid;place-items:center;text-align:center;padding:24px;color:var(--ink3);font-size:15px;line-height:1.8;
+  background:repeating-linear-gradient(135deg,transparent 0 16px,var(--rule) 16px 17px),var(--sheet)}
+.photo .frame b{display:block;font-family:var(--serif);font-weight:600;font-size:21px;color:var(--ink2)}
+.photo figcaption{font-size:14px;color:var(--ink3);margin-top:12px}
+
+/* 聴く */
+.listen{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:28px 40px;align-items:start}
+.screen{position:relative;aspect-ratio:16/9;max-width:100%;background:var(--sheet);overflow:hidden}
+.screen img,.screen iframe{position:absolute;inset:0;width:100%;height:100%;border:0;object-fit:cover;display:block}
+.poster{position:absolute;inset:0;display:block;color:var(--on-ai);text-decoration:none}
+.poster .play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:84px;height:84px;border-radius:50%;background:var(--ai);display:grid;place-items:center;font-size:30px;padding-left:6px;box-sizing:border-box}
+.poster:hover .play,.poster:focus-visible .play{background:var(--ink)}
+.audiobox{position:absolute;inset:0;display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:center;padding:28px}
+.audiobox img{position:static;width:auto;height:100%;max-height:260px;object-fit:contain}
+.audiobox .try{font-family:var(--serif);font-weight:600;font-size:clamp(20px,2.2vw,26px);margin:0 0 14px}
+.audiobox audio{width:100%;max-width:360px}
+.audiobox .part{font-size:15px;color:var(--ink2);margin:10px 0 0}
+.now{margin-top:18px}
+.now h3{font-size:24px;line-height:1.4}
+.now .nm{font-size:15px;color:var(--ink2);margin:4px 0 14px}
+.now .score{max-width:520px}
+.embednote{font-size:14px;color:var(--ink3);margin:10px 0 0}
+.playlist{list-style:none;margin:0;padding:0;border-bottom:1px solid var(--rule)}
+.playlist button{all:unset;box-sizing:border-box;cursor:pointer;width:100%;display:grid;grid-template-columns:3.4em minmax(0,1fr) auto;gap:4px 14px;align-items:baseline;padding:14px 12px;border-top:1px solid var(--rule);min-height:56px}
+.playlist button:hover{background:var(--sheet)}
+.playlist button:focus-visible{outline:2px solid var(--ai);outline-offset:-2px}
+.playlist .py{font-size:15px;color:var(--ink3);font-variant-numeric:tabular-nums}
+.playlist .pt{font-family:var(--serif);font-weight:600;font-size:18px;line-height:1.45}
+.playlist .pt small{display:block;font-family:var(--sans);font-weight:400;font-size:14px;color:var(--ink3)}
+.playlist .pd{font-size:15px;color:var(--ink2);font-variant-numeric:tabular-nums}
+.playlist button[aria-current="true"]{background:var(--sheet)}
+.playlist button[aria-current="true"] .pt{color:var(--ai)}
+.playlist button[aria-current="true"] .py::before{content:"▶ ";color:var(--ai)}
+.chan{font-size:15px;margin:14px 0 0}
+
+/* 作品目録 */
+section{padding-block:56px;border-top:2px solid var(--ink)}
+.sechead{display:flex;justify-content:space-between;align-items:flex-end;gap:12px 24px;flex-wrap:wrap;margin-bottom:22px}
+.sechead h2{font-size:clamp(28px,3.4vw,38px);font-weight:800;letter-spacing:.06em}
+.sechead p{margin:6px 0 0;color:var(--ink2);max-width:36em}
+.filters{display:grid;gap:14px;padding-block:18px;border-block:1px solid var(--rule);margin-bottom:8px}
+.frow{display:grid;grid-template-columns:7.5em 1fr;gap:10px;align-items:start}
+.frow .fl{font-size:15px;color:var(--ink2);padding-top:9px}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opt{font:inherit;font-size:16px;min-height:44px;padding:0 16px;border:1px solid var(--rule);border-radius:2px;background:var(--sheet);color:var(--ink);cursor:pointer}
+.opt.st{font-family:var(--serif);font-weight:600}
+.opt:hover{border-color:var(--ai)}
+.opt[aria-pressed="true"]{background:var(--ai);border-color:var(--ai);color:var(--on-ai)}
+.search{display:flex;gap:8px;flex-wrap:wrap}
+.search input{font:inherit;font-size:16px;min-height:44px;padding:0 14px;border:1px solid var(--rule);border-radius:2px;background:var(--sheet);color:var(--ink);width:min(100%,22em)}
+.bar{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding-block:12px;font-size:16px}
+.bar .hit b{font-size:22px;font-weight:700;font-variant-numeric:tabular-nums}
+.bar button{font:inherit;font-size:15px;background:none;border:0;color:var(--ai);cursor:pointer;min-height:44px;padding:0 4px;text-decoration:underline;text-underline-offset:3px}
+.list{list-style:none;margin:0;padding:0}
+.work{display:grid;grid-template-columns:5.2em minmax(0,1fr) minmax(260px,38%);gap:10px 32px;padding-block:22px;border-top:1px solid var(--rule)}
+.work .yr{font-size:18px;font-weight:500;font-variant-numeric:tabular-nums;color:var(--ink2);padding-top:2px}
+.work h3{font-size:22px;line-height:1.45}
+.work .kind{font-size:14px;color:var(--ink3);margin:2px 0 8px}
+.work.stage .kind{color:var(--shu)}
+.work .meta{font-size:15px;color:var(--ink2);margin:0;line-height:1.8}
+.work .cm{font-size:15px;color:var(--ink3);margin:8px 0 0}
+.work .ext{display:flex;flex-wrap:wrap;gap:6px 22px;margin-top:8px;font-size:15px}
+.work .ext span{color:var(--ink2)}
+.work .ext button{font:inherit;font-size:15px;font-weight:500;background:none;border:0;padding:0;min-height:32px;color:var(--ai);cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.work > .score{align-self:start;align-content:start}
+.none{padding-block:28px;color:var(--ink2);border-top:1px solid var(--rule)}
+.more{display:flex;justify-content:center;padding-top:22px;border-top:1px solid var(--rule)}
+.btn{font:inherit;font-size:16px;font-weight:500;min-height:48px;padding:0 26px;border:1.5px solid var(--ai);border-radius:2px;background:none;color:var(--ai);cursor:pointer;text-decoration:none;display:inline-flex;align-items:center}
+.btn.fill{background:var(--ai);color:var(--on-ai)}
+.btn:hover{background:var(--ai);color:var(--on-ai)}
+.ask{margin-top:36px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;padding-block:22px 0;border-top:1px solid var(--ink)}
+.ask p{margin:0;font-family:var(--serif);font-size:22px;font-weight:600}
+
+/* 略歴 */
+.bio{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.bio blockquote{margin:0;font-family:var(--serif);font-weight:600;font-size:clamp(21px,2.4vw,27px);line-height:1.8}
+.bio blockquote footer{font-family:var(--sans);font-weight:400;font-size:15px;color:var(--ink3);margin-top:14px}
+.bio dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:10px 22px;font-size:16px}
+.bio dt{color:var(--ink3);white-space:nowrap}
+.bio dd{margin:0}
+
+/* ご依頼 */
+.req{list-style:none;margin:0;padding:0}
+.req li{display:grid;grid-template-columns:14em 1fr;gap:8px 32px;padding-block:20px;border-top:1px solid var(--rule)}
+.req li:last-child{border-bottom:1px solid var(--rule)}
+.req h3{font-size:21px}
+.req p{margin:0}
+.req .ex{font-size:15px;color:var(--ink3);margin-top:4px}
+.mail{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:28px}
+.mail code{font-family:var(--sans);font-size:21px;user-select:all}
+footer.site{font-size:14px;color:var(--ink3);padding-block:28px 40px;border-top:2px solid var(--ink);margin-top:8px}
+
+@media (max-width:900px){
+  .recent,.bio{grid-template-columns:1fr}
+  .listen{grid-template-columns:minmax(0,1fr)}
+  .photo .frame{aspect-ratio:16/10}
+  .work{grid-template-columns:4.2em minmax(0,1fr)}
+  .work .score{grid-column:2}
+  .req li{grid-template-columns:1fr}
+}
+@media (max-width:520px){
+  body{padding-inline:16px}
+  .demo{margin-inline:-16px;padding-inline:16px}
+  .frow{grid-template-columns:1fr;gap:4px}
+  .kindrow{display:none}
+  .audiobox{grid-template-columns:1fr;justify-items:center;text-align:center;padding:16px;position:static}
+  .screen.aud{aspect-ratio:auto}
+  .audiobox img{max-height:180px}
+  .frow .fl{padding-top:0}
+  .work{grid-template-columns:1fr}
+  .work .score{align-self:start;grid-column:1}
+  .stave{grid-template-columns:5.4em 1fr 2.4em}
+}
+</style>
+
+</head>
+<body>
+<div class="demo mihon-nav">リニューアル見本（C案）　｜　<a href="../">4案の一覧</a>　｜　<a href="../a/">A案</a>　<a href="../b/">B案</a>　<b>C案</b>　<a href="../d/">D案</a></div>
+
+<div class="wrap" lang="ja">
+  <header class="head">
+    <p class="name">秋岸寛久<small>作曲家・編曲家　日本音楽集団</small></p>
+    <nav aria-label="目次"><ul>
+      <li><a href="#recent">最近の仕事</a></li>
+      <li><a href="#kiku">聴く</a></li>
+      <li><a href="#mokuroku">作品目録</a></li>
+      <li><a href="#ryakureki">略歴</a></li>
+      <li><a href="#irai">ご依頼</a></li>
+    </ul></nav>
+  </header>
+
+  <main>
+    <article class="recent" id="recent">
+      <div>
+        <p class="label">最近の仕事</p>
+        <p class="date num">2026.7.3 — 8.23　新橋演舞場</p>
+        <h1>スーパー歌舞伎『もののけ姫』</h1>
+        <p class="role"><span>編曲</span>秋岸寛久</p>
+        <dl class="credits">
+          <dt>オリジナル音楽</dt><dd>久石譲</dd>
+          <dt>演奏</dt><dd>日本音楽集団（録音）</dd>
+          <dt>原作</dt><dd>宮﨑駿</dd>
+        </dl>
+        <p class="body">「アシタカせっ記」をはじめとする久石譲さんの音楽を、尺八や二十五絃箏などの和楽器のために編曲しました。録音は2026年6月、日本音楽集団とともに2日間。</p>
+        <p class="label">この公演の編成</p>
+        <div class="score" id="recentScore"></div>
+        <p class="sub">スーパー歌舞伎の仕事は、先代・市川猿之助の『オオクニヌシ』以来、二度目です。</p>
+        <div class="links">
+          <a href="https://mononoke-kabuki.jp/" target="_blank" rel="noopener">公演の公式サイト ↗</a>
+          <a href="#kiku">秋岸作品を聴く ↓</a>
+        </div>
+      </div>
+      <figure class="photo">
+        <div class="frame"><div><b>舞台写真</b>松竹の許可を得てから<br>ここに掲載します</div></div>
+        <figcaption>編曲者インタビュー「久石譲の旋律を、歌舞伎の音にする」は取材後に掲載します。</figcaption>
+      </figure>
+    </article>
+
+    <section id="kiku">
+      <div class="sechead"><div><h2>聴く</h2><p>日本音楽集団の演奏で、秋岸寛久の作品と編曲を聴けます。一覧から曲を選んでください。</p></div></div>
+      <div class="listen">
+        <div>
+          <div class="screen" id="screen"></div>
+          <p class="embednote" id="embednote" hidden>この見本の画面では、再生ボタンを押すとYouTubeが新しいタブで開きます。公開するホームページでは、この場で再生されます。</p>
+          <div class="now" id="now"></div>
+        </div>
+        <div>
+          <ol class="playlist" id="playlist"></ol>
+          <p class="chan"><a href="https://www.youtube.com/channel/UCJDbaZI9_WY9HvwVkMnu6Bw/videos" target="_blank" rel="noopener">日本音楽集団のYouTubeチャンネル ↗</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="mokuroku">
+      <div class="sechead">
+        <div>
+          <h2>作品目録</h2>
+          <p>1982年から2026年まで。お手持ちの編成に合う曲を、楽器の名前から探せます。楽器を複数選ぶと、全部が入った曲だけが残ります。</p>
+        </div>
+      </div>
+      <div class="filters" role="group" aria-label="絞り込み">
+        <div class="frow"><span class="fl">楽器</span><div class="opts" id="fInst"></div></div>
+        <div class="frow"><span class="fl">人数</span><div class="opts" id="fSize"></div></div>
+        <div class="frow kindrow"><span class="fl">種類</span><div class="opts" id="fKind"></div></div>
+        <div class="frow"><span class="fl">聴く</span><div class="opts" id="fListen"></div></div>
+        <div class="frow"><label class="fl" for="q">曲名</label><div class="search"><input id="q" type="search" placeholder="例：トポロジカル、桜" autocomplete="off"></div></div>
+      </div>
+      <div class="bar">
+        <div class="hit">該当 <b id="hit"></b> 曲</div>
+        <div><button type="button" id="order"></button>　<button type="button" id="reset">条件をすべて外す</button></div>
+      </div>
+      <ol class="list" id="list"></ol>
+      <div class="more"><button type="button" class="btn" id="more"></button></div>
+      <div class="ask"><p>合う曲がなければ、お手持ちの編成で書きます。</p><a class="btn fill" href="#irai">ご依頼について</a></div>
+    </section>
+
+    <section id="ryakureki">
+      <div class="sechead"><h2>略歴</h2></div>
+      <div class="bio">
+        <blockquote>「私なりに西洋音楽を吸収し、日本の楽器で表現したつもりです。」<footer>『トポロジカルスペース第三番』（2023）によせた言葉</footer></blockquote>
+        <dl>
+          <dt>生まれ</dt><dd>横浜。小学4年生から箏を習う</dd>
+          <dt>学び</dt><dd>東京音楽大学作曲科卒業、同研究科修了。作曲を浦田健次郎・三木稔、箏を野坂惠子・滝田美智子、三絃を坂井敏子に学ぶ</dd>
+          <dt>所属</dt><dd>日本音楽集団 団員。1987年『風籟』でデビュー</dd>
+          <dt>教える</dt><dd>日本大学芸術学部 講師（10年）。秋岸音楽教室で作曲・編曲を指導</dd>
+          <dt>海外</dt><dd>オーストリア（シュライニング音楽祭）、韓国・中国（オーケストラ・アジア）、アメリカで作品が演奏される</dd>
+        </dl>
+      </div>
+    </section>
+
+    <section id="irai">
+      <div class="sechead"><div><h2>ご依頼</h2><p>作曲・編曲のご相談、楽譜のご注文は、メールでお気軽にどうぞ。</p></div></div>
+      <ul class="req">
+        <li><h3>合奏団の新曲・編曲</h3><div><p>四重奏の歌謡曲メドレーから、二十人の協奏曲まで。お手持ちの編成と、弾き手の腕前に合わせて書きます。</p><p class="ex">例：『時のマドンナ』尺八・箏2・十七絃（米澤浩・熊沢栄利子 委嘱）</p></div></li>
+        <li><h3>舞台・劇の音楽</h3><div><p>歌舞伎、音楽劇、和楽劇。物語に合わせて、和楽器の音楽を書き、編曲します。</p><p class="ex">例：スーパー歌舞伎『もののけ姫』編曲（2026）</p></div></li>
+        <li><h3>楽譜のご注文</h3><div><p>四重奏の編曲楽譜（縦譜）は、大日本家庭音楽会から発売中です。</p></div></li>
+        <li><h3>作曲・編曲を習う</h3><div><p>横浜の秋岸音楽教室で、作曲と編曲を教えています。</p></div></li>
+      </ul>
+      <div class="mail"><code id="addr">akg01248@gmail.com</code><button type="button" class="btn" id="copy">アドレスをコピー</button></div>
+    </section>
+  </main>
+  <footer class="site">© 秋岸寛久</footer>
+</div>
+
+<script>
+const WORKS=[{"t":"フルート・箏・三絃のための小品","y":1982,"h":"フルート・箏・三絃","i":"","p":"東京音楽大学、教育科オーディション","c":"初めて委嘱された、邦楽器を含む作品です。","k":"orig","g":["箏","三味線","洋楽器"],"n":"duo","st":[{"n":"三絃","c":1},{"n":"箏","c":1},{"n":"フルート","c":1}]},{"t":"二面の箏のための靄霤","y":1983,"h":"箏２","i":"","p":"東京音楽大学邦楽演奏コース修了演奏会","c":"「あいりゅう」と読みます。朝日生命ホールで自演もしました。","k":"orig","g":["箏"],"n":"duo","st":[{"n":"箏","c":2}]},{"t":"三味線協奏曲","y":1984,"h":"長唄三味線とオーケストラ","i":"（卒業作品）","p":"三味線:杉浦弘和 指揮:広上淳一 仙台フィルハーモニー管弦楽団","c":"初演は1990年。仙台市青年文化センター コンサートホール","k":"orig","g":["三味線","洋楽器"],"n":"large","st":[{"n":"長唄三味線","c":1,"s":1},{"n":"オーケストラ","c":1}]},{"t":"風籟","y":1987,"h":"尺八３","i":"日本音楽集団","p":"藤崎重康・素川欣也・米澤浩 音楽集団サロンコンサート","c":"日本音楽集団デビュー作","k":"orig","g":["尺八"],"n":"duo","st":[{"n":"尺八","c":3}]},{"t":"冥煌","y":1987,"h":"長唄三味線・地歌三味線・義太夫三味線","i":"日本音楽集団","p":"太田幸子・工藤哲子・田中悠美子 音楽集団サロンコンサート","c":"音楽集団１０３回定期ほか、たびたび再演していただきました。","k":"orig","g":["三味線"],"n":"duo","st":[{"n":"長唄三味線","c":1},{"n":"地歌三味線","c":1},{"n":"義太夫三味線","c":1}]},{"t":"風樹","y":1987,"h":"尺八合奏","i":"東京尺八合奏団","p":"坂田誠山指揮 東京尺八合奏団 東邦生命ホール","c":"かなり無理な音を書いてしまい、皆さん苦労なさったようです。第１０回記念演奏会でも再演していただきました。","k":"orig","g":["尺八"],"n":"large","st":[{"n":"尺八合奏","c":0,"g":1}]},{"t":"流翠","y":1987,"h":"尺八２(Soli) 箏群","i":"札幌・新音楽集団”群”","p":"第１６回定期演奏会 札幌市教育文化会館","c":"のちに邦楽合奏団「まどか」で再演していただきました。","k":"orig","g":["尺八","箏"],"n":"large","st":[{"n":"尺八","c":2,"s":1},{"n":"箏群","c":0,"g":1}]},{"t":"新編「平家物語」","y":1987,"h":"Soli:筑前琵琶・薩摩琵琶 合奏:笛・尺八２・二十絃２・十七絃・打楽器","i":"日本音楽集団","p":"田原順子 半田淳子 第１０１回定期演奏会 abc会館ホール","c":"音楽集団定期デビュー作","k":"orig","g":["尺八","篠笛","十七絃","二十絃","琵琶","打楽器"],"n":"large","st":[{"n":"筑前琵琶","c":1,"s":1},{"n":"薩摩琵琶","c":1,"s":1},{"n":"笛","c":1},{"n":"尺八","c":2},{"n":"十七絃","c":1},{"n":"二十絃","c":2},{"n":"打楽器","c":1}]},{"t":"多毛留","y":1987,"h":"語りと邦楽合唱","i":"日本音楽集団","p":"米倉斉加年／日色ともゑ・高橋明邦指揮 第１０２回定期","c":"米倉斉加年さんの絵本に音楽をつけました。","k":"stage","g":["歌・語り"],"n":"large","st":[{"n":"語り","c":1},{"n":"邦楽合唱","c":1,"g":1}]},{"t":"大原御幸","y":1988,"h":"薩摩琵琶・笛・二十絃・打楽器","i":"半田淳子","p":"琵琶 半田淳子の世界 カザルスホール","c":"後白河院の大原御幸の様子を半田さんが構成し、薩摩琵琶の弾き語りを中心に、静かな音楽をつけました。","k":"orig","g":["篠笛","二十絃","琵琶","打楽器"],"n":"mid","st":[{"n":"笛","c":1},{"n":"薩摩琵琶","c":1},{"n":"二十絃","c":1},{"n":"打楽器","c":1}]},{"t":"萌生","y":1989,"h":"尺八・琵琶・十七絃","i":"坂田梁山・坂田美子・松村エリナ","p":"「一管二絃」第一回演奏会 abc会館ホール","c":"のちに音楽集団のメンバーによっても何度か再演されています。","k":"orig","g":["尺八","十七絃","琵琶"],"n":"duo","st":[{"n":"尺八","c":1},{"n":"琵琶","c":1},{"n":"十七絃","c":1}]},{"t":"プレアデス","y":1989,"h":"箏３・十七絃（合奏）","i":"東京音大邦楽演奏コース有志・東京学芸大白菊会有志","p":"箏曲松の実会 国立劇場小劇場","c":"３０名近い大合奏で、自身で指揮をしました。","k":"orig","g":["箏","十七絃"],"n":"mid","st":[{"n":"箏","c":3},{"n":"十七絃","c":1}]},{"t":"FOMALHAUT","y":1989,"h":"箏独奏","i":"東京音楽大学OB有志","p":"松本音楽文化小ホール・自演","c":"箏を自演するために書いた唯一の作品です。","k":"orig","g":["箏"],"n":"solo","st":[{"n":"箏","c":1,"s":1}]},{"t":"撃壌歌","y":1989,"h":"笛・打楽器４","i":"日本音楽集団","p":"第112回定期 西川浩平・黒坂昇・前田文男・細谷一郎・高橋明邦 バリオホール","c":"ライブ録音がNHK-FMで放送されました。","k":"orig","g":["篠笛","打楽器"],"n":"mid","st":[{"n":"笛","c":1},{"n":"打楽器","c":4}]},{"t":"光彩陸離","y":1991,"h":"笛・尺八２・三味線・琵琶・二十絃２・十七絃・打楽器２","i":"日本音楽集団","p":"第121回定期 津田ホール","c":"客演の天沼裕子さんの指揮で初演されました。のちに十三絃版を作り、邦楽合奏団「まどか」によって演奏されています。","k":"orig","g":["尺八","篠笛","十七絃","二十絃","三味線","琵琶","打楽器"],"n":"large","st":[{"n":"笛","c":1},{"n":"尺八","c":2},{"n":"三味線","c":1},{"n":"琵琶","c":1},{"n":"十七絃","c":1},{"n":"二十絃","c":2},{"n":"打楽器","c":2}]},{"t":"複素空間","y":1992,"h":"笛・尺八２・三味線・琵琶・箏２・十七絃・打楽器２","i":"邦楽合奏団「まどか」","p":"関裕文指揮 第二回定期演奏会","c":"たいへん気に入っていただいて、何度も再演を重ねてくださっています。邦楽合奏団「織座」でも演奏していただきました。","k":"orig","g":["尺八","篠笛","箏","十七絃","三味線","琵琶","打楽器"],"n":"large","st":[{"n":"笛","c":1},{"n":"尺八","c":2},{"n":"三味線","c":1},{"n":"琵琶","c":1},{"n":"箏","c":2},{"n":"十七絃","c":1},{"n":"打楽器","c":2}]},{"t":"発散と収束と","y":1993,"h":"笛・尺八・胡弓・三味線・二十絃・十七絃・打楽器２","i":"日本音楽集団","p":"第129回定期 津田ホール","c":"この定期のテーマ「祭り」に基づいた作品です。","k":"orig","g":["尺八","篠笛","十七絃","二十絃","三味線","打楽器"],"n":"large","st":[{"n":"笛","c":1},{"n":"尺八","c":1},{"n":"三味線","c":1},{"n":"胡弓","c":1},{"n":"十七絃","c":1},{"n":"二十絃","c":1},{"n":"打楽器","c":2}]},{"t":"五つの空間","y":1993,"h":"尺八独奏","i":"米澤浩","p":"米澤浩／熊沢栄利子 ジョイントリサイタル'93 津田ホール","c":"尺八の可能性を自分なりに追求した作品。CD(YONESAN@2nd BCD-045)にも入れていただきました。","k":"orig","g":["尺八"],"n":"solo","st":[{"n":"尺八","c":1,"s":1}]},{"t":"火群（ほむら）","y":1993,"h":"十七絃独奏","i":"宮越圭子","p":"宮越圭子十七絃リサイタル バリオホール","c":"「燐火」「燎原」「燈穂」の３曲からなる組曲。特に「燎原」は何度も演奏してくださっています。","k":"orig","g":["十七絃"],"n":"solo","st":[{"n":"十七絃","c":1,"s":1}]},{"t":"青の諧調","y":1994,"h":"尺八独奏","i":"米澤浩","p":"米澤浩／熊沢栄利子 ジョイントリサイタル'94 津田ホール","c":"自分の中では離れたところにあった「尺八」と「青」のイメージを結びつけてみようと思いました。","k":"orig","g":["尺八"],"n":"solo","st":[{"n":"尺八","c":1,"s":1}]},{"t":"碧流","y":1994,"h":"二十五絃３・低音二十五絃","i":"２５絃の会","p":"野坂惠子ほか シアターサンモール","c":"ディアトニックな調絃による聴きやすい作品です。","k":"orig","g":["二十五絃"],"n":"mid","st":[{"n":"二十五絃","c":3},{"n":"低音二十五絃","c":1}]},{"t":"飛湍","y":1995,"h":"ヴァイオリン・三味線","i":"松本克巳","p":"","c":"阪神淡路大震災の被災地での演奏のために委嘱していただきました。","k":"orig","g":["三味線","洋楽器"],"n":"duo","st":[{"n":"三味線","c":1},{"n":"ヴァイオリン","c":1}]},{"t":"響影空間","y":1995,"h":"尺八、三味線、打楽器の独奏と邦楽器群","i":"日本音楽集団","p":"第141回定期 三橋貴風・簑田司郎・黒坂昇・客演指揮：中村ユリ バリオホール","c":"「秋岸寛久作品特集」で初演。第148回定期でも再演されました。","k":"orig","g":["尺八","三味線","打楽器"],"n":"large","st":[{"n":"尺八","c":1,"s":1},{"n":"三味線","c":1,"s":1},{"n":"打楽器","c":1,"s":1},{"n":"邦楽器群","c":0,"g":1}]},{"t":"和讃玲讚","y":1996,"h":"笛／尺八・二十絃・サヌカイト","i":"日本音楽集団","p":"第141回定期 添川浩史・山田明美・臼杵美智代 バリオホール","c":"臼杵美智代さんのリサイタルほか、何度も演奏していただいています。","k":"orig","g":["尺八","篠笛","二十絃","打楽器"],"n":"mid","st":[{"n":"笛","c":1},{"n":"尺八","c":1},{"n":"二十絃","c":1},{"n":"サヌカイト","c":1}]},{"t":"モノリス","y":1996,"h":"二十絃独奏","i":"中垣雅葉","p":"中垣雅葉 二十絃コンサート 日暮里サニーホール","c":"演奏時間はそれほど長くはないが、弾き始めたら休むところがない難曲。","k":"orig","g":["二十絃"],"n":"solo","st":[{"n":"二十絃","c":1,"s":1}]},{"t":"二つの諧調","y":1998,"h":"二十絃独奏","i":"渡辺邦子","p":"二十絃箏 Potpourri コンサート 松本 穂高 伊那","c":"技術的には易しくはないが、音楽的には平易を目指した作品。音楽集団のメンバーたちによっても何度か再演されています。","k":"orig","g":["二十絃"],"n":"solo","st":[{"n":"二十絃","c":1,"s":1}]},{"t":"往来","y":1999,"h":"尺八２・三味線・琵琶・箏３・十七絃の合奏","i":"ＮＨＫ邦楽技能者育成会","p":"第４５期生卒業演奏会 イイノホール","c":"自身で指揮をしました。のちに各パート１名ずつのアンサンブルでも演奏されています。","k":"orig","g":["尺八","箏","十七絃","三味線","琵琶"],"n":"large","st":[{"n":"尺八","c":2},{"n":"三味線","c":1},{"n":"琵琶","c":1},{"n":"箏","c":3},{"n":"十七絃","c":1}]},{"t":"緑篠清漣","y":2000,"h":"尺八・箏","i":"彩里京鼓","p":"彩里京鼓 箏と舞 尺八：三橋貴風","c":"唯一の尺八と十三絃箏の二重奏です。","k":"orig","g":["尺八","箏"],"n":"duo","st":[{"n":"尺八","c":1},{"n":"箏","c":1}]},{"t":"トポロジカルスペース","y":2000,"h":"尺八・三味線・二十絃・十七絃・打楽器","i":"日本音楽集団","p":"第162回定期","c":"様々なメンバーによって何度も再演されています。","k":"orig","g":["尺八","十七絃","二十絃","三味線","打楽器"],"n":"mid","st":[{"n":"尺八","c":1},{"n":"三味線","c":1},{"n":"十七絃","c":1},{"n":"二十絃","c":1},{"n":"打楽器","c":1}]},{"t":"五つの幻影","y":2001,"h":"箏独奏","i":"山田由紀","p":"山田由紀 箏 三絃リサイタル","c":"「春」をイメージした５楽章の独奏曲です。","k":"orig","g":["箏"],"n":"solo","st":[{"n":"箏","c":1,"s":1}]},{"t":"白雲青靄","y":2001,"h":"尺八２・三味線・箏３・十七絃の合奏","i":"港北三曲会","p":"第十五回港北三曲会演奏会","c":"横浜の港北三曲会十五周年記念委嘱作品。大変気に入っていただいて何度も再演され、CDまで作っていただきました。","k":"orig","g":["尺八","箏","十七絃","三味線"],"n":"large","st":[{"n":"尺八","c":2},{"n":"三味線","c":1},{"n":"箏","c":3},{"n":"十七絃","c":1}]},{"t":"和讃玲讚第二番","y":2001,"h":"三味線・サヌカイト","i":"下野戸亜弓・臼杵美智代","p":"下野戸亜弓＆臼杵美智代 ジョイントリサイタル","c":"音色の対比が特徴的な三楽章の二重奏曲です。","k":"orig","g":["三味線","打楽器"],"n":"duo","st":[{"n":"三味線","c":1},{"n":"サヌカイト","c":1}]},{"t":"玄象ふしぎ草子","y":2002,"h":"二十絃、十七絃持ち替え・語り","i":"松村エリナ","p":"","c":"松村さんの「箏と語り 雪ものがたり」というCDに収録していただきました。","k":"orig","g":["十七絃","二十絃","歌・語り"],"n":"duo","st":[{"n":"十七絃","c":1},{"n":"二十絃","c":1},{"n":"語り","c":1}]},{"t":"行雲流水","y":2003,"h":"尺八・二十絃・マリンバ","i":"シュライニング国際音楽祭","p":"尺八：米澤浩 二十絃：熊沢栄利子 マリンバ：ケヴァン・テヘラーニ","c":"音楽集団第175回定期や山中湖国際音楽祭ほかで、何度も再演されています。","k":"orig","g":["尺八","二十絃","洋楽器"],"n":"duo","st":[{"n":"尺八","c":1},{"n":"二十絃","c":1},{"n":"マリンバ","c":1}]},{"t":"白雨","y":2003,"h":"尺八・ピアノ","i":"シュライニング国際音楽祭","p":"尺八：米澤浩 ピアノ：エドワード・クトロヴァッツ","c":"初演メンバーによって日本初演され、その後も何回か再演されています。","k":"orig","g":["尺八","洋楽器"],"n":"duo","st":[{"n":"尺八","c":1},{"n":"ピアノ","c":1}]},{"t":"城の庭","y":2003,"h":"尺八２・三味線・箏３・十七絃","i":"きねづか","p":"きねづか 第３回演奏会","c":"のちに尺八と箏を１パートずつ減らした５人編成版を作り、桐朋学園芸術短大の皆さんに初演していただきました。","k":"orig","g":["尺八","箏","十七絃","三味線"],"n":"large","st":[{"n":"尺八","c":2},{"n":"三味線","c":1},{"n":"箏","c":3},{"n":"十七絃","c":1}]},{"t":"音楽劇「砂漠に消えた王」","y":2003,"h":"邦楽合奏","i":"日本音楽集団 川崎絵都夫・福嶋頼秀・真鍋尚之の各氏と共作","p":"第173回定期 劇団民藝の稲垣隆史さんの演出、主演","c":"第一幕前半を担当しました。","k":"stage","g":[],"n":"large","st":[{"n":"邦楽合奏（編成は未掲載）","c":0,"g":1}]},{"t":"祇園精舎 薩摩琵琶とオーケストラアジアのための協奏曲","y":2004,"h":"薩摩琵琶弾き語りとオーケストラアジア","i":"オーケストラアジア","p":"ソウル世宗文化ホール 琵琶：石田さえ 指揮：稲田康 翌年、日本初演されました。","c":"何度も再演され、のちに日本楽器のみによるヴァージョンも作りました。オーケストラアジアによるCD「祇園精舎」(KICH1106)に収録されています。","k":"orig","g":["琵琶","歌・語り"],"n":"large","st":[{"n":"薩摩琵琶","c":1,"s":1},{"n":"オーケストラアジア","c":0,"g":1}]},{"t":"二つの淡彩画","y":2004,"h":"十七絃二重奏","i":"丸岡映美","p":"丸岡映美 箏リサイタル♯２ 十七絃２：宮越圭子","c":"自由な掛け合いと緻密なアンサンブルが楽しめる、同楽器の二重奏です。","k":"orig","g":["十七絃"],"n":"duo","st":[{"n":"十七絃","c":2}]},{"t":"空と海","y":2004,"h":"サヌカイト独奏","i":"臼杵美智代","p":"","c":"サヌカイトの繊細さと力強さを表現しました。","k":"orig","g":["打楽器"],"n":"solo","st":[{"n":"サヌカイト","c":1,"s":1}]},{"t":"邦楽器のためのコンポジション","y":2005,"h":"音楽集団１０人編成","i":"日本音楽集団","p":"日本音楽集団安芸高田公演","c":"音楽集団で何度も再演していただいているほか、十三絃版はアマチュア合奏団にも人気。 CDは日本音楽集団、縦譜は大日本家庭音楽会にお問い合わせください。","k":"orig","g":[],"n":"large","s":"大日本家庭音楽会／日本音楽集団","st":[{"n":"日本音楽集団（10人編成）","c":0,"g":1}]},{"t":"緑篠清漣第二番","y":2005,"h":"尺八・二十絃","i":"阪口夕山","p":"第３回 阪口夕山 尺八リサイタル 二十絃：桜井智永","c":"二十絃の繊細、かつダイナミックな音と尺八の伸びやかな「歌」の対比が楽しめる作品。","k":"orig","g":["尺八","二十絃"],"n":"duo","st":[{"n":"尺八","c":1},{"n":"二十絃","c":1}]},{"t":"笛と三味線のためのコンポジション","y":2005,"h":"篠笛・三味線","i":"杵家七三","p":"江戸手繰事 杵家七三 三味線ライブ 笛：竹井誠","c":"軽快でしゃれた二重奏。","k":"orig","g":["篠笛","三味線"],"n":"duo","st":[{"n":"篠笛","c":1},{"n":"三味線","c":1}]},{"t":"和楽劇 呑気布袋","y":2006,"h":"合唱・日本音楽集団 ほか","i":"日本音楽集団 川崎絵都夫、福嶋頼秀の各氏と共作","p":"第185回定期 脚本：荘奈美 演出：近藤久也 東芝フィルハーモニー合唱団 ほか","c":"のちに演奏会形式で再演。ピアノ伴奏版あり。","k":"stage","g":["歌・語り"],"n":"large","st":[{"n":"合唱","c":1},{"n":"日本音楽集団","c":0,"g":1}]},{"t":"環","y":2007,"h":"篠笛２・尺八２・打楽器","i":"邦楽合奏団 織座","p":"第18回定期演奏会 山田章弘・松尾慧・立花茂生・土屋雅章・伊藤翼 タワーホール船堀","c":"軽快な木魚のリズムに管楽器がからむ楽しい作品。","k":"orig","g":["尺八","篠笛","打楽器"],"n":"mid","st":[{"n":"篠笛","c":2},{"n":"尺八","c":2},{"n":"打楽器","c":1}]},{"t":"邦楽器のためのインプロヴィゼーション","y":2008,"h":"篠笛・尺八・三味線・琵琶・二十絃・十七絃・打楽器","i":"日本音楽集団","p":"第190回定期演奏会 津田ホール","c":"十三絃版が音楽集団の講習会で使用されました。 CDは日本音楽集団、縦譜は大日本家庭音楽会にお問い合わせください。","k":"orig","g":["尺八","篠笛","十七絃","二十絃","三味線","琵琶","打楽器"],"n":"large","s":"日本音楽集団","st":[{"n":"篠笛","c":1},{"n":"尺八","c":1},{"n":"三味線","c":1},{"n":"琵琶","c":1},{"n":"十七絃","c":1},{"n":"二十絃","c":1},{"n":"打楽器","c":1}]},{"t":"十七絃と邦楽器群のための協奏曲","y":2008,"h":"独奏十七絃・篠笛・尺八２・三味線・琵琶・二十絃２・十七絃・打楽器３","i":"日本音楽集団","p":"第191回定期演奏会 独奏：宮越圭子","c":"独奏楽器としての十七絃の様々な面を合奏群と対比させました。第207回定期でも再演されました。","k":"orig","g":["尺八","篠笛","十七絃","二十絃","三味線","琵琶","打楽器"],"n":"large","st":[{"n":"十七絃","c":1,"s":1},{"n":"篠笛","c":1},{"n":"尺八","c":2},{"n":"三味線","c":1},{"n":"琵琶","c":1},{"n":"十七絃","c":1},{"n":"二十絃","c":2},{"n":"打楽器","c":3}]},{"t":"パッサカリア","y":2008,"h":"箏２・十七絃","i":"熊沢栄利子","p":"アンビシャスコンサートVol.7","c":"熊沢先生に教えていただいていた我が娘たちのために書いた作品。","k":"orig","g":["箏","十七絃"],"n":"duo","st":[{"n":"箏","c":2},{"n":"十七絃","c":1}]},{"t":"螺旋","y":2009,"h":"尺八・三味線・箏２・十七絃・打楽器","i":"日本音楽集団","p":"第196回定期演奏会","c":"十三絃を用い、五音音階にこだわった作品。 音源は「iTunes Store」で販売されています。日本音楽集団ホームページの「楽曲販売」からお求めください。","k":"orig","g":["尺八","箏","十七絃","三味線","打楽器"],"n":"mid","d":"iTunes Store","st":[{"n":"尺八","c":1},{"n":"三味線","c":1},{"n":"箏","c":2},{"n":"十七絃","c":1},{"n":"打楽器","c":1}]},{"t":"「みだれ」による幻想的協奏曲","y":2010,"h":"独奏二十五絃・邦楽器群","i":"オーケストラアジア","p":"オーケストラアジアジャパン 紀尾井ホール 独奏：滝田美智子 指揮：稲田康","c":"中国北京でも初演されました。","k":"orig","g":["二十五絃"],"n":"large","st":[{"n":"二十五絃","c":1,"s":1},{"n":"邦楽器群","c":0,"g":1}]},{"t":"邦楽器のためのコンポジションII","y":2010,"h":"篠笛・尺八２・三味線・琵琶・二十絃２・十七絃・打楽器３","i":"日本音楽集団","p":"第199回定期演奏会","c":"楽しく軽快な約１０分の作品。 音源は「iTunes Store」で販売されています。日本音楽集団ホームページの「楽曲販売」からお求めください。","k":"orig","g":["尺八","篠笛","十七絃","二十絃","三味線","琵琶","打楽器"],"n":"large","d":"iTunes Store","st":[{"n":"篠笛","c":1},{"n":"尺八","c":2},{"n":"三味線","c":1},{"n":"琵琶","c":1},{"n":"十七絃","c":1},{"n":"二十絃","c":2},{"n":"打楽器","c":3}]},{"t":"流紋","y":2010,"h":"尺八・二十絃・ピアノ","i":"米澤浩・熊沢栄利子","p":"「邦楽いろはにほ～ 其の六」 ピアノ：市川由佳","c":"透明感のある美しい三重奏。","k":"orig","g":["尺八","二十絃","洋楽器"],"n":"duo","st":[{"n":"尺八","c":1},{"n":"二十絃","c":1},{"n":"ピアノ","c":1}]},{"t":"箏と三味線と邦楽器群のための協奏曲","y":2010,"h":"独奏三味線・独奏箏・三味線２・箏２・十七絃２","i":"西潟昭子・石垣清美・洗足音大の仲間たち","p":"三絃と箏の軌跡 国立劇場小劇場","c":"一小節ごとに拍子が変わる、楽しい？アンサンブルが経験できる協奏曲。","k":"orig","g":["箏","十七絃","三味線"],"n":"large","st":[{"n":"三味線","c":1,"s":1},{"n":"箏","c":1,"s":1},{"n":"三味線","c":2},{"n":"箏","c":2},{"n":"十七絃","c":2}]},{"t":"邦楽リハビリde三曲","y":2010,"h":"尺八２・三味線・箏２・十七絃","i":"港北三曲会 二十五周年記念委嘱 松崎雄一さんと共作","p":"港北三曲会 二十五周年記念演奏会 港北公会堂","c":"この曲で体操ができます。五大路子さんが考案し、指導してくださいました。","k":"orig","g":["尺八","箏","十七絃","三味線"],"n":"mid","st":[{"n":"尺八","c":2},{"n":"三味線","c":1},{"n":"箏","c":2},{"n":"十七絃","c":1}]},{"t":"森羅万象","y":2011,"h":"笛・尺八３・三味線２・太棹三味線・琵琶２・二十絃３・十七絃・打楽器４","i":"日本音楽集団","p":"第203回定期演奏会 津田ホール 指揮：稲田康","c":"東日本大震災直後に書きました。大編成、三楽章の作品です。","k":"orig","g":["尺八","篠笛","十七絃","二十絃","三味線","琵琶","打楽器"],"n":"large","st":[{"n":"笛","c":1},{"n":"尺八","c":3},{"n":"三味線","c":2},{"n":"太棹三味線","c":1},{"n":"琵琶","c":2},{"n":"十七絃","c":1},{"n":"二十絃","c":3},{"n":"打楽器","c":4}],"yt":"tOFt9p3u-0Q","du":"20:19","vn":"日本音楽集団 第242回定期演奏会"},{"t":"光の帝国 ー ルネ・マグリットに寄せて ー","y":2011,"h":"二十五絃独奏","i":"滝田美智子","p":"５th 滝田美智子リサイタル 白寿ホール","c":"学生時代の箏の師である滝田先生に委嘱していただきました。大変な難曲ですが、評判はよかったです。","k":"orig","g":["二十五絃"],"n":"solo","st":[{"n":"二十五絃","c":1,"s":1}]},{"t":"組曲 異国幻想 ～アンリ・ルソーの絵画によせて","y":2011,"h":"尺八・箏・十七絃","i":"米澤浩・熊沢栄利子","p":"邦楽いろはにほ～ 其の九 十七絃：帯名久仁子","c":"夢（三重奏）・飢えたライオン（尺八・箏）・眠るボヘミアンヌ（箏・十七絃）・日没の森の風景（尺八・十七絃）・異国風景（三重奏）","k":"orig","g":["尺八","箏","十七絃"],"n":"duo","st":[{"n":"尺八","c":1},{"n":"箏","c":1},{"n":"十七絃","c":1}]},{"t":"童謡ファンタジー","y":2011,"h":"尺八・箏２・十七絃","i":"平成23年度邦楽地域活性化事業 埼玉県","p":"邦楽ガラ・コンサート","c":"埼玉県ゆかりの童謡をもとにした、たいへん聴きやすい作品で、演奏者にもお客様にもたいへん好評でした。 縦譜が大日本家庭音楽会より出版されています。 ♪試聴♪","k":"arr","g":["尺八","箏","十七絃"],"n":"mid","s":"大日本家庭音楽会","st":[{"n":"尺八","c":1},{"n":"箏","c":2},{"n":"十七絃","c":1}],"a":"media/Douyou.mp3","cv":"media/Douyou.jpg","vn":"前奏と「青い眼の人形」の一部"},{"t":"３つのカプリース","y":2012,"h":"尺八・三味線・箏２・十七絃","i":"日本音楽集団","p":"第206回定期演奏会 津田ホール 尺八：原郷隆 三味線：穂積大志 箏：熊沢栄利子・桜井智永 十七絃：城ヶ崎美保","c":"十三絃を用いた五重奏曲。アマチュアの方にも演奏していただきたいです。","k":"orig","g":["尺八","箏","十七絃","三味線"],"n":"mid","st":[{"n":"尺八","c":1},{"n":"三味線","c":1},{"n":"箏","c":2},{"n":"十七絃","c":1}]},{"t":"彩絢～いろどり～","y":2012,"h":"尺八・津軽三味線・二十絃","i":"米澤浩・熊沢栄利子","p":"邦楽いろはにほ～ 其の拾 津軽三味線：三山正寛","c":"音色や音階による色合いの変化を表現しました。","k":"orig","g":["尺八","二十絃","三味線"],"n":"duo","st":[{"n":"尺八","c":1},{"n":"津軽三味線","c":1},{"n":"二十絃","c":1}]},{"t":"緑篠清漣 第３番","y":2012,"h":"尺八・二十絃","i":"米澤浩・熊沢栄利子","p":"邦楽いろはにほ～ 其の十一","c":"自分で尺八や二十絃が演奏できたらこういう曲を演奏したいと思って作りました。米澤・熊沢両氏の第１３次海外公演で海外初演されました。","k":"orig","g":["尺八","二十絃"],"n":"duo","st":[{"n":"尺八","c":1},{"n":"二十絃","c":1}]},{"t":"流紋 第二番","y":2014,"h":"チェロ・尺八・二十絃","i":"米澤浩・熊沢栄利子","p":"邦楽いろはにほ～ 其の十三 チェロ：只野晋作","c":"洋楽器と邦楽器のアンサンブル。","k":"orig","g":["尺八","二十絃","洋楽器"],"n":"duo","st":[{"n":"尺八","c":1},{"n":"二十絃","c":1},{"n":"チェロ","c":1}]},{"t":"眩耀泡幻（げんようほうげん）","y":2014,"h":"邦楽合奏","i":"日本音楽集団","p":"第211回定期演奏会","c":"かなり大きな編成の軽快な合奏曲。","k":"orig","g":[],"n":"large","st":[{"n":"邦楽合奏（編成は未掲載）","c":0,"g":1}]},{"t":"睆煌～きらめき～","y":2014,"h":"津軽三味線・二十絃","i":"米澤浩・熊沢栄利子","p":"邦楽いろはにほ～ 其の十四 津軽三味線：三山正寛","c":"音色が様々に絡み合う４楽章の二重奏曲。","k":"orig","g":["二十絃","三味線"],"n":"duo","st":[{"n":"津軽三味線","c":1},{"n":"二十絃","c":1}]},{"t":"白道","y":2014,"h":"琵琶・尺八・二十絃","i":"米澤浩・熊沢栄利子","p":"邦楽いろはにほ～ 其の十五 薩摩琵琶：久保田晶子","c":"自由で静謐な第一楽章と八分音符の流れが心地よい第二楽章。","k":"orig","g":["尺八","二十絃","琵琶"],"n":"duo","st":[{"n":"尺八","c":1},{"n":"琵琶","c":1},{"n":"二十絃","c":1}]},{"t":"富山の旋律によるディベルティメント","y":2014,"h":"箏３・十七絃","i":"富山県文化振興財団","p":"邦楽地域活性化事業 邦楽コンサート 箏のファンタジー","c":"「こきりこ節」「越中小原節」「麦屋節」をモチーフにした合奏曲。","k":"orig","g":["箏","十七絃"],"n":"mid","st":[{"n":"箏","c":3},{"n":"十七絃","c":1}]},{"t":"トポロジカルスペース第二番","y":2015,"h":"篠笛・琵琶・二十絃・十七絃・打楽器","i":"日本音楽集団","p":"第214回定期演奏会","c":"軽快なアンサンブルが魅力的な五重奏。","k":"orig","g":["篠笛","十七絃","二十絃","琵琶","打楽器"],"n":"mid","st":[{"n":"篠笛","c":1},{"n":"琵琶","c":1},{"n":"十七絃","c":1},{"n":"二十絃","c":1},{"n":"打楽器","c":1}],"yt":"LCM4UOvw7uA","du":"12:25","vn":"日本音楽集団 第214回定期演奏会"},{"t":"わらべうたラプソディー","y":2017,"h":"邦楽合奏・歌","i":"日本音楽集団","p":"第220回定期演奏会","c":"","k":"orig","g":["歌・語り"],"n":"large","st":[{"n":"歌","c":1},{"n":"邦楽合奏","c":0,"g":1}]},{"t":"己 - ki - IV「希」","y":2019,"h":"邦楽合奏","i":"日本音楽集団","p":"創立55周年記念CD BOX『己 - ki -』収録（団内作曲家による共作）","c":"","k":"orig","g":[],"n":"large","st":[{"n":"邦楽合奏（編成は未掲載）","c":0,"g":1}]},{"t":"トポロジカルスペース第三番","y":2023,"h":"和楽器オーケストラ","i":"日本音楽集団","p":"第239回定期演奏会 豊洲シビックセンターホール","c":"","k":"orig","g":["洋楽器"],"n":"large","st":[{"n":"和楽器オーケストラ","c":0,"g":1}],"yt":"BDP37zbYiJI","du":"15:11","vn":"日本音楽集団（2023年）"},{"t":"スーパー歌舞伎『もののけ姫』","y":2026,"h":"邦楽合奏（尺八・二十五絃箏 ほか）","i":"松竹","p":"2026年7月3日〜8月23日 新橋演舞場／演奏 日本音楽集団（録音）","c":"オリジナル音楽：久石譲。編曲を担当。","k":"stage","g":["尺八","二十五絃"],"n":"large","st":[{"n":"尺八","c":1},{"n":"二十五絃","c":1},{"n":"ほか（取材後に掲載）","c":0,"g":1}]},{"t":"スーパー歌舞伎『オオクニヌシ』","y":null,"h":"歌舞伎音楽","i":"","p":"先代 市川猿之助","c":"音楽を担当。","k":"stage","g":[],"n":"large","st":[{"n":"邦楽合奏（編成は未掲載）","c":0,"g":1}]},{"t":"フランス音楽メドレー","y":1998,"h":"邦楽合奏","i":"日本音楽集団","p":"第246回定期演奏会で再演","c":"「どの曲も邦楽器で演奏しても魅力は失われません。」（編曲者）","k":"arr","g":[],"n":"large","st":[{"n":"邦楽合奏（編成は未掲載）","c":0,"g":1}],"yt":"YILxwmtPY54","du":"16:18","vn":"日本音楽集団 第246回定期演奏会"},{"t":"交響譚詩（伊福部昭）日本音楽集団版","y":null,"h":"邦楽合奏","i":"日本音楽集団","p":"CD BOX『己 - ki -』収録","c":"","k":"arr","g":[],"n":"large","st":[{"n":"邦楽合奏（編成は未掲載）","c":0,"g":1}]},{"t":"SF交響ファンタジー（伊福部昭）邦楽器版","y":null,"h":"邦楽合奏","i":"日本音楽集団","p":"","c":"","k":"arr","g":[],"n":"large","st":[{"n":"邦楽合奏（編成は未掲載）","c":0,"g":1}],"yt":"nipLVsS__WU","du":"13:36","vn":"日本音楽集団"},{"t":"宮崎駿アニメ・メドレー","y":null,"h":"邦楽合奏","i":"","p":"","c":"","k":"arr","g":[],"n":"large","st":[{"n":"邦楽合奏（編成は未掲載）","c":0,"g":1}]},{"t":"時のマドンナ","y":null,"h":"尺八・箏２・十七絃","i":"米澤浩・熊沢栄利子","p":"","c":"恋におちて〜時の流れに身をまかせ〜ルージュの伝言〜木綿のハンカチーフ〜聖母たちのララバイ〜あの鐘を鳴らすのはあなた","k":"arr","g":["尺八","箏","十七絃"],"n":"mid","s":"大日本家庭音楽会","st":[{"n":"尺八","c":1},{"n":"箏","c":2},{"n":"十七絃","c":1}]},{"t":"SAKURAパラフレーズ","y":null,"h":"尺八・箏２・十七絃","i":"米澤浩・熊沢栄利子","p":"","c":"桜坂〜桜（河口恭吾）〜さくら（独唱）〜桜（コブクロ）〜夜桜お七","k":"arr","g":["尺八","箏","十七絃"],"n":"mid","s":"大日本家庭音楽会","st":[{"n":"尺八","c":1},{"n":"箏","c":2},{"n":"十七絃","c":1}]},{"t":"新千鳥の曲","y":2017,"h":"邦楽合奏","i":"","p":"","c":"","k":"arr","g":[],"n":"large","st":[{"n":"邦楽合奏（編成は未掲載）","c":0,"g":1}]},{"t":"瑶族舞曲","y":null,"h":"邦楽合奏","i":"","p":"","c":"","k":"arr","g":[],"n":"large","st":[{"n":"邦楽合奏（編成は未掲載）","c":0,"g":1}],"yt":"BxihcpNbuBM","du":"5:49","vn":"日本音楽集団"}];
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+// 総譜の段を描く：楽器ごとに五線1段、左に段名、右に人数
+function score(st){
+  return st.map(p=>{
+    if(p.g) return `<div class="stave group"><span class="glabel">${esc(p.n)}</span></div>`;
+    return `<div class="stave${p.s?' solo':''}"><span class="stn">${esc(p.n)}${p.s?'<i>独奏</i>':''}</span><span class="lines"></span><span class="cnt">${p.c>1?'×'+p.c:''}</span></div>`;
+  }).join('');
+}
+
+const INSTS=[['尺八','尺八'],['篠笛','笛'],['三味線','三味線'],['琵琶','琵琶'],['箏','箏'],['十七絃','十七絃'],['二十絃','二十絃'],['二十五絃','二十五絃'],['打楽器','打楽器'],['洋楽器','洋楽器'],['歌・語り','歌・語り']];
+const SIZE=[['solo','独奏'],['duo','2〜3人'],['mid','4〜6人'],['large','7人以上・合奏']];
+const KIND=[['orig','オリジナル'],['arr','編曲'],['stage','舞台']];
+const KL={orig:'オリジナル',arr:'編曲',stage:'舞台'};
+const PAGE=15;
+// 埋め込み再生ができる場所か（Claudeのアーティファクトとローカルファイルでは、YouTubeを新しいタブで開く）
+const CAN_EMBED=location.protocol==='https:'&&!/claude|anthropic/i.test(location.hostname);
+const LISTEN=WORKS.filter(w=>w.yt||w.a).sort((a,b)=>(b.y??0)-(a.y??0));
+let cur=0;
+function showListen(i,autoplay){
+  cur=i; const w=LISTEN[i], sc=document.getElementById('screen');
+  sc.classList.toggle('aud',!!w.a);
+  if(w.yt){
+    const url='https://www.youtube.com/watch?v='+w.yt;
+    sc.innerHTML=`<a class="poster" href="${url}" target="_blank" rel="noopener" aria-label="『${esc(w.t)}』を再生する"><img src="media/yt_${w.yt}.jpg" alt=""><span class="play" aria-hidden="true">▶</span></a>`;
+    sc.querySelector('.poster').addEventListener('click',e=>{
+      if(!CAN_EMBED) return;
+      e.preventDefault();
+      sc.innerHTML=`<iframe src="https://www.youtube-nocookie.com/embed/${w.yt}?autoplay=1&rel=0" title="『${esc(w.t)}』の演奏" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>`;
+    });
+  }else{
+    sc.innerHTML=`<div class="audiobox"><img src="${esc(w.cv)}" alt="「${esc(w.t)}」楽譜の表紙"><div><p class="try">♪ 試しに聴いてみる？ ♪</p><audio controls preload="none" src="${esc(w.a)}"></audio><p class="part">（${esc(w.vn)}）</p></div></div>`;
+    if(autoplay){const au=sc.querySelector('audio');au.play().catch(()=>{});}
+  }
+  document.getElementById('embednote').hidden=!(w.yt&&!CAN_EMBED);
+  const meta=[w.y?w.y+'年':'',KL[w.k],w.yt?'演奏　'+w.vn:'楽譜の試聴',w.du?w.du:''].filter(Boolean).map(esc).join('　·　');
+  document.getElementById('now').innerHTML=`<h3>${esc(w.t)}</h3><p class="nm">${meta}</p><div class="score${w.st.every(p=>p.g)?' bare':''}" aria-label="編成：${esc(w.h)}">${score(w.st)}</div>`;
+  document.querySelectorAll('#playlist button').forEach((b,j)=>b.setAttribute('aria-current',j===i));
+}
+document.getElementById('playlist').innerHTML=LISTEN.map((w,i)=>`<li><button type="button" data-i="${i}"><span class="py">${w.y??'—'}</span><span class="pt">${esc(w.t)}<small>${w.yt?esc(w.vn):'♪ 楽譜の試聴'}</small></span><span class="pd">${w.du??'試聴'}</span></button></li>`).join('');
+document.getElementById('playlist').addEventListener('click',e=>{const b=e.target.closest('button');if(b)showListen(+b.dataset.i);});
+showListen(0);
+function goListen(t){
+  const i=LISTEN.findIndex(w=>w.t===t); if(i<0)return;
+  showListen(i,true);
+  document.getElementById('kiku').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
+}
+const state={inst:new Set(),size:null,kind:null,listen:false,q:'',desc:true,shown:PAGE};
+
+function opts(id,list,on,toggle,cls=''){
+  const el=document.getElementById(id);
+  el.innerHTML=list.map(([v,l])=>`<button type="button" class="opt ${cls}" data-v="${esc(v)}" aria-pressed="${on(v)}">${esc(l)}</button>`).join('');
+  el.onclick=e=>{const b=e.target.closest('.opt');if(!b)return;toggle(b.dataset.v);state.shown=PAGE;render();};
+}
+function match(w){
+  for(const k of state.inst) if(!w.g.includes(k)) return false;
+  if(state.size&&w.n!==state.size) return false;
+  if(state.kind&&w.k!==state.kind) return false;
+  if(state.listen&&!(w.yt||w.a)) return false;
+  if(state.q&&!(w.t+w.c).includes(state.q)) return false;
+  return true;
+}
+function row(w){
+  const meta=[w.i&&`委嘱　${esc(w.i)}`,w.p&&`初演・収録　${esc(w.p)}`].filter(Boolean).join('<br>');
+  const ext=[w.yt&&`<button type="button" data-listen="${esc(w.t)}">▶ 演奏を聴く（${esc(w.du)}）</button>`,w.a&&`<button type="button" data-listen="${esc(w.t)}">♪ 試しに聴いてみる？</button>`,w.s&&`<span>楽譜：${esc(w.s)}</span>`,w.d&&`<span>配信：${esc(w.d)}</span>`].filter(Boolean).join('');
+  return `<li class="work${w.k==='stage'?' stage':''}"><span class="yr">${w.y??'—'}</span>
+    <div><h3>${esc(w.t)}</h3><p class="kind">${KL[w.k]}</p>${meta?`<p class="meta">${meta}</p>`:''}${w.c?`<p class="cm">${esc(w.c)}</p>`:''}${ext?`<div class="ext">${ext}</div>`:''}</div>
+    <div class="score${w.st.every(p=>p.g)?' bare':''}" aria-label="編成：${esc(w.h)}">${score(w.st)}</div></li>`;
+}
+function render(){
+  opts('fInst',INSTS,v=>state.inst.has(v),v=>state.inst.has(v)?state.inst.delete(v):state.inst.add(v),'st');
+  opts('fSize',SIZE,v=>state.size===v,v=>state.size=state.size===v?null:v);
+  opts('fKind',KIND,v=>state.kind===v,v=>state.kind=state.kind===v?null:v);
+  opts('fListen',[['1','聴ける曲だけ']],()=>state.listen,()=>state.listen=!state.listen);
+  const hit=WORKS.filter(match).sort((a,b)=>state.desc?(b.y??0)-(a.y??0):(a.y??9999)-(b.y??9999));
+  document.getElementById('hit').textContent=hit.length;
+  document.getElementById('list').innerHTML=hit.length?hit.slice(0,state.shown).map(row).join(''):'<li class="none">条件に合う曲がありません。条件を減らすか、お手持ちの編成での新曲をご相談ください。</li>';
+  const more=document.getElementById('more'),rest=hit.length-state.shown;
+  more.parentElement.hidden=rest<=0; more.textContent=`続きを見る（あと${rest}曲）`;
+  document.getElementById('order').textContent=state.desc?'古い順に並べる':'新しい順に並べる';
+}
+document.getElementById('recentScore').innerHTML=score(WORKS.find(w=>w.t.includes('もののけ姫')).st);
+document.getElementById('more').onclick=()=>{state.shown+=PAGE*2;render();};
+document.getElementById('order').onclick=()=>{state.desc=!state.desc;render();};
+document.getElementById('list').addEventListener('click',e=>{const b=e.target.closest('[data-listen]');if(b)goListen(b.dataset.listen);});
+document.getElementById('reset').onclick=()=>{state.inst.clear();state.size=state.kind=null;state.listen=false;state.q='';document.getElementById('q').value='';state.shown=PAGE;render();};
+document.getElementById('q').addEventListener('input',e=>{state.q=e.target.value.trim();state.shown=PAGE;render();});
+render();
+
+document.getElementById('copy').addEventListener('click',e=>{
+  const btn=e.currentTarget,el=document.getElementById('addr');
+  navigator.clipboard.writeText(el.textContent).then(()=>{btn.textContent='コピーしました';setTimeout(()=>btn.textContent='アドレスをコピー',1800);})
+  .catch(()=>{const r=document.createRange();r.selectNodeContents(el);const s=getSelection();s.removeAllRanges();s.addRange(r);});
+});
+</script>
+
+</body>
+</html>
