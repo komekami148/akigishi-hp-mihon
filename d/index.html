@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="robots" content="noindex,nofollow">
-<style>img{max-width:100%}[hidden]{display:none!important}.mihon-nav a{color:inherit}.mihon-nav b{font-weight:700}</style>
+<style>img{max-width:100%}[hidden]{display:none!important}.mihon-nav a{color:inherit}.mihon-nav b{font-weight:700}.mihon-theme{font:inherit;letter-spacing:inherit;color:inherit;background:none;border:1px solid currentColor;border-radius:2px;padding:2px .8em;min-height:32px;cursor:pointer;vertical-align:middle}.mihon-theme:focus-visible{outline:2px solid currentColor;outline-offset:2px}</style><script>try{var t=localStorage.getItem("akg-theme");if(t==="dark"||t==="light")document.documentElement.dataset.theme=t}catch(e){}</script>
 <title>秋岸寛久 作曲家</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -145,7 +145,7 @@ footer.site{font-size:13.5px;color:var(--ink3);padding-block:26px 40px;border-to
 
 </head>
 <body>
-<div class="demo mihon-nav">リニューアル見本（D案）　｜　<a href="../">4案の一覧</a>　｜　<a href="../a/">A案</a>　<a href="../b/">B案</a>　<a href="../c/">C案</a>　<b>D案</b></div>
+<div class="demo mihon-nav">リニューアル見本（D案）　｜　<a href="../">4案の一覧</a>　｜　<a href="../a/">A案</a>　<a href="../b/">B案</a>　<a href="../c/">C案</a>　<b>D案</b>　｜　<button type="button" class="mihon-theme">暗い背景で見る</button></div>
 
 <div class="wrap" lang="ja">
   <header class="head">
@@ -305,5 +305,10 @@ document.addEventListener('click',e=>{
 });
 </script>
 
+<script>(function(){var b=document.querySelector(".mihon-theme"),r=document.documentElement,mq=matchMedia("(prefers-color-scheme: dark)");
+function dark(){var t=r.dataset.theme;return t?t==="dark":mq.matches}
+function show(){var d=dark();b.textContent=d?"明るい背景で見る":"暗い背景で見る";b.setAttribute("aria-pressed",d)}
+b.addEventListener("click",function(){var t=dark()?"light":"dark";r.dataset.theme=t;try{localStorage.setItem("akg-theme",t)}catch(e){}show()});
+mq.addEventListener("change",show);show()})();</script>
 </body>
 </html>
